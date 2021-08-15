@@ -10,7 +10,7 @@ class MatchSection extends HTMLElement {
     render() {
         this.innerHTML = `<section class="matches_section">
         <div class="container">
-        ${sectionTitle('PERTANDINGAN', '#')}
+        ${sectionTitle('PERTANDINGAN', '')}
             <div class="matches-container">
                 <div class="result_area">
                     <match-card></match-card>
