@@ -11,7 +11,6 @@ class playerDetailView extends View {
     renderAllPlayer = () => {
         const data = this._data.data
         const id = getParams('pId')
-        console.log(id)
         const singleData = data.find((player) => player.id === +id)
         const markup = ` <section class="section_all_players">
                             <div class="container">

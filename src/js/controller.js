@@ -32,7 +32,6 @@ const loadAllPlayers = async () => {
 const init = () => {
     sidebarNavigate()
     const path = window.location.href
-    console.log(path)
     if (path === '/index.html' || path === '/') {
         loadNewsHome()
         loadPlayerHome()
