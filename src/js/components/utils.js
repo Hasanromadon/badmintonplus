@@ -1,9 +1,3 @@
-export const getParams = (paramName) => {
-    const url = new URL(window.location.href)
-    const id = url.searchParams.get(paramName)
-    return id
-}
-
 export const sidebarNavigate = () => {
     const sidebar = document.querySelector('.sidebar')
 

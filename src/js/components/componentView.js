@@ -38,19 +38,19 @@ export const playerCard = (data) =>
 
 export const newsDetail = (data) => {
     return `<div class="container">
-        <div class="news-detail__image">
-          <img src="${data.imageUrl}" alt="">
-        </div>
-        <div class="news-detail__title">
-          <h3>${data.title}</h3>
-          <p>${data.date} <span class="divider">|</span> <span>${data.author}</span></p>
-        </div>
-        <div class="news-detail__container">
-        <div class="news-detail__content">
-        ${data.content}
-        </div>
-      </div>
-      </div>`
+                <div class="news-detail__image">
+                     <img src="${data.imageUrl}" alt="">
+                </div>
+                <div class="news-detail__title">
+                    <h3>${data.title}</h3>
+                    <p>${data.date} <span class="divider">|</span> <span>${data.author}</span></p>
+                </div>
+                <div class="news-detail__container">
+                    <div class="news-detail__content">
+                    ${data.content}
+                    </div>
+                </div>
+            </div>`
 }
 
 export const playerDetail = (data) => {

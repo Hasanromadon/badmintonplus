@@ -10,3 +10,9 @@ export const AJAX = async (url, uploadData = undefined) => {
         alert('SERVER ERROR, PLEASE RELOAD')
     }
 }
+
+export const getParams = (paramName) => {
+    const url = new URL(window.location.href)
+    const id = url.searchParams.get(paramName)
+    return id
+}

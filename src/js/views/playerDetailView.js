@@ -1,5 +1,5 @@
 import View from './view'
-import { getParams } from '../components/utils'
+import { getParams } from '../helpers'
 import {
     playerCard,
     playerDetail,

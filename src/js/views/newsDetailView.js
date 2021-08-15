@@ -1,5 +1,5 @@
 import View from './view'
-import { getParams } from '../components/utils'
+import { getParams } from '../helpers'
 import { newsCard, newsDetail, sectionTitle } from '../components/componentView'
 class newsDetailViews extends View {
     _parentElement = document.querySelector('.news-details')
