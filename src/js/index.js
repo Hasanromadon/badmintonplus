@@ -1,0 +1,8 @@
+import '../sass/main.scss'
+import './components/navigation'
+import './components/hero'
+import './components/matchCard'
+import './components/footer'
+import './components/videoCard'
+import './components/matchSection'
+import './controller'

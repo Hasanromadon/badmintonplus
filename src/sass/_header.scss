@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    background-image: url('../img/header_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    color: white;
+    overflow: hidden;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    &__link {
+        list-style: none;
+        &__item {
+            display: inline;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+            }
+            @media only screen and (max-width: $bp-small) {
+                display: block;
+            }
+        }
+    }
+}
+
+.logo {
+    text-decoration: none;
+    display: block;
+}
+
+.icon-menu {
+    display: none;
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
+}
+
+.sidebar {
+    top: 0;
+    background-color: black;
+    width: 60vw;
+    height: 40vh;
+    right: 0;
+    padding: 2rem;
+    transform: translatex(100%);
+    transition: all 0.3s;
+    opacity: 0;
+    z-index: 999;
+    .nav__link__item:not(:last-child) {
+        padding-bottom: 2rem;
+    }
+
+    &__close {
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 90%;
+        background: none;
+        border: none;
+    }
+}
+.show_sidebar {
+    position: absolute;
+    display: block;
+    transform: translateX(0);
+    transition: all 0.3s;
+    opacity: 0.95;
+}
+.hide_sidebar {
+    position: absolute;
+    display: block;
+    transform: translatex(100%);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.menu__link {
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+}
+
+.hero {
+    background-image: url('../img/hero_img.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 5.6rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    &__text {
+        &--red {
+            color: $color-primary;
+        }
+        &--white {
+            color: white;
+        }
+    }
+}

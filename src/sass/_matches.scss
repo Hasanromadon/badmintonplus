@@ -1,0 +1,81 @@
+.matches_section {
+    background-color: white;
+    background-image: url('../img/matches/matches_bg.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.matches-container {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 2rem;
+    @media only screen and (max-width: $bp-medium-2) {
+        grid-template-columns: 55% 1fr;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.result_card__group {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.result_team {
+    background-color: $color-grey-light-3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49.5%;
+    &--left {
+        margin-right: 0.5%;
+    }
+}
+
+.team {
+    &__name {
+        margin: 0 1rem;
+        font-weight: 700;
+    }
+    & img {
+        @media only screen and (max-width: $bp-smallest) {
+            width: 24px;
+        }
+    }
+}
+
+.result_point {
+    background-color: $color-primary;
+    width: 15%;
+    color: white;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.match_info {
+    background-color: $color-grey-light-3;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: $color-grey-light-4;
+    margin-top: 0.2rem;
+}
+
+.video-card iframe {
+    height: 50vh;
+}
+
+.video-card__title {
+    padding: 2rem;
+    background-color: $color-grey-dark-1;
+    color: white;
+}

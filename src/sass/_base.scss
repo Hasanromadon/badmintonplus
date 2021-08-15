@@ -1,0 +1,75 @@
+$color-primary: #c70101;
+$color-grey-light-1: #f8f8f8; // Light body
+$color-grey-light-2: #f5f5f5; // Light section
+$color-grey-light-3: #f2f2f2; // section title
+$color-grey-light-4: #534f4f; // section link
+$color-grey-dark-1: #19181c; // Normal text
+$color-grey-dark-2: #2b2b2b; // caption area
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+
+h1 {
+    font-size: 5rem;
+    line-height: 43.5px;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+h4 {
+    font-size: 1.8rem;
+}
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-medium-2: 48.5em; // 766px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$bp-xsmall: 25.5em; // 408px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 47%;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: $color-grey-light-1;
+}
+.container {
+    max-width: 116rem;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp-large) {
+        padding: 0 1rem;
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 99vw;
+        }
+    }
+}
+section {
+    margin-bottom: 6rem;
+    padding: 2rem 0;
+}
