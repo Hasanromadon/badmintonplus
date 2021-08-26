@@ -1,2 +1,2 @@
 #badminton-plus
-project for submission dicoding
+project for submission
