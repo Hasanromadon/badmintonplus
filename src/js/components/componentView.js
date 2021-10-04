@@ -1,7 +1,7 @@
 export const newsCard = (data, type) => {
     const { id, title, date, content, imageUrl } = data
     return `<div class="news__card ${type === 'big' ? 'news__card--big' : ''} ">
-              <div class="news__card__image"> <img src='${imageUrl}'/> </div>
+              <div class="news__card__image"> <img loading="lazy" src='${imageUrl}'/> </div>
               <div class="news_caption__area">
                 <p class="news_caption__area__date" > ${date}</p>
                 <h4 class="news_caption__area__title_small"> <a class="news__link" href="berita.html?nId=${id}"> ${
@@ -23,7 +23,7 @@ export const newsCard = (data, type) => {
 
 export const playerCard = ({ id, imageUrl, sector, name }) =>
     `<div class=" player_card">
-            <img class="player_img" src="${imageUrl}"/>
+            <img loading="lazy" class="player_img" src="${imageUrl}"/>
             <div class=" player_info">
                 <p class="player_sector">${sector}</p>
                   <h4 class="player_name">${name}</h4>
@@ -34,7 +34,7 @@ export const playerCard = ({ id, imageUrl, sector, name }) =>
 export const newsDetail = ({ imageUrl, title, date, author, content }) => {
     return `<div class="container">
                 <div class="news-detail__image">
-                     <img src="${imageUrl}" alt="">
+                     <img loading="lazy" src="${imageUrl}" alt="">
                 </div>
                 <div class="news-detail__title">
                     <h3>${title}</h3>
@@ -71,7 +71,7 @@ export const playerDetail = ({
                     </div>
                     <div class="profile-player-container">
                         <div class="image-area">
-                            <img class="profile-image" src="${imageUrl}"/>
+                            <img loading="lazy" class="profile-image" src="${imageUrl}"/>
                         </div>
                         <div class="profile-player-detail">
                             ${labelPlayer('club', club)}
